@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h4 align="center">
 	<a href="https://github.com/JokeDevil/JD_Priority/releases/latest" title=""><img alt="Release" src="https://img.shields.io/github/v/release/JokeDevil/JD_Priority"></a>
 	<a href="LICENSE" title=""><img alt="Licence" src="https://img.shields.io/github/license/JokeDevil/JD_Priority.svg"></a>
@@ -23,9 +22,3 @@ Cooldown will start if the person who started a Priority Disconnects from the se
 ![Inactive](http://jokedevil.com/files/19112020-86.png)
 ![Active](http://jokedevil.com/files/19112020-84.png)
 ![Cooldown](http://jokedevil.com/files/19112020-85.png)
-=======
-# JD_Priority
-FiveM Advanced Priority Resource.
-
-### Soon™
->>>>>>> 2ad0b2295294cb75385c7720c292d33e4acd2480
