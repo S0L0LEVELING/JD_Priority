@@ -9,6 +9,7 @@ Config.AcePerm = "jd.staff"
 
 -- Default cooldown time
 Config.CooldownTime = 15
+Config.DisplaySeconds = true
 
 -- Location for the Priorty Status Display
 Config.DisplayX = 0.165
