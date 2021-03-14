@@ -1,6 +1,6 @@
 author 'JokeDevil'
 description 'JD_Priority (https://www.jokedevil.com)'
-version '1.0.1'
+version '1.0.2'
 url 'https://jokedevil.com'
 
 -- Config Script

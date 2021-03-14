@@ -1,7 +1,8 @@
 Config = {}
 
-Config.JD_logsV2 = false
-Config.JD_logsV2Channel = "priority"
+Config.JD_logs = false
+Config.JD_logsChannel = "priority"
+Config.JD_logsColor = "#F1F1F1"
 Config.Color = "~m~"
 
 -- Ace perm needed for staff commands

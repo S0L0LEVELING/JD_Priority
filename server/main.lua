@@ -33,8 +33,8 @@ AddEventHandler('playerDropped', function(reason)
                     TriggerClientEvent("Priority:updateStatus", -1, newStatus)
                 end
             end)
-            if Config.JD_logsV2 then
-                exports.JD_logsV2:sendLogs('`'..GetPlayerName(source)..' Disconnected: Priority Cooldown Started`', source, 0, Config.JD_logsV2Channel)
+            if Config.JD_logs then
+                exports.JD_logs:discord('`'..GetPlayerName(source)..' Disconnected: Priority Cooldown Started`', source, 0, Config.JD_logsColor, Config.JD_logChannel)
             end
         end
     end
@@ -51,8 +51,8 @@ RegisterCommand("resetpcd", function(source, args, rawCommand)
             newStatus = "~g~Inactive"
             TriggerClientEvent("Priority:updateStatus", -1, newStatus)
             TriggerClientEvent('Priority:Notify', -1, '~r~Alert:~w~\nThe Priority got ~b~reset~w~ by a staff member.')
-            if Config.JD_logsV2 then
-                exports.JD_logsV2:sendLogs('`'..GetPlayerName(source)..' reset the priority cooldown`', source, 0, Config.JD_logsV2Channel)
+            if Config.JD_logs then
+                exports.JD_logs:discord('`'..GetPlayerName(source)..' reset the priority cooldown`', source, 0, Config.JD_logsColor, Config.JD_logsChannel)
             end
         else
             TriggerClientEvent('Priority:Notify', source, '~r~Alert:~w~\nNo priority active.')
@@ -77,8 +77,8 @@ RegisterCommand("inprogress", function(source, args, rawCommand)
                 end
             end)
             TriggerClientEvent('Priority:Notify', -1, '~r~Alert:~w~\nPriority ~g~started~w~ by '..GetPlayerName(source))
-            if Config.JD_logsV2 then
-                exports.JD_logsV2:sendLogs('`Priority started by '..GetPlayerName(source)..'`', source, 0, Config.JD_logsV2Channel)
+            if Config.JD_logs then
+                exports.JD_logs:discord('`Priority started by '..GetPlayerName(source)..'`', source, 0, Config.JD_logsColor, Config.JD_logsChannel)
             end
         else
             TriggerClientEvent('Priority:Notify', source, '~r~Alert:~w~\nA Priority is already in progress!')
@@ -122,8 +122,8 @@ RegisterCommand("cooldown", function(source, args, rawCommand)
                 end
             end)
             TriggerClientEvent('Priority:Notify', -1, '~r~Alert:~w~\nPriority ~b~cooldown ~w~started by '..GetPlayerName(source))
-            if Config.JD_logsV2 then
-                exports.JD_logsV2:sendLogs('`Priority cooldown started by'..GetPlayerName(source)..'`', source, 0, Config.JD_logsV2Channel)
+            if Config.JD_logs then
+                exports.JD_logs:discord('`Priority cooldown started by '..GetPlayerName(source)..'`', source, 0, Config.JD_logsColor, Config.JD_logsChannel)
             end
         else
             TriggerClientEvent('Priority:Notify', source, '~r~Alert:~w~\nYou can not trigger a cooldown.\nOnly the person who activates the priority can start the cooldown.')
