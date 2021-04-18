@@ -3,7 +3,7 @@ Config = {}
 Config.JD_logs = false
 Config.JD_logsChannel = "priority"
 Config.JD_logsColor = "#F1F1F1"
-Config.Color = "~m~"
+Config.Color = "~c~"
 
 -- Ace perm needed for staff commands
 Config.AcePerm = "jd.staff"

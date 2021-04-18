@@ -1,7 +1,7 @@
-author 'JokeDevil'
-description 'JD_Priority (https://www.jokedevil.com)'
-version '1.0.2'
-url 'https://jokedevil.com'
+author 'Prefech'
+description 'JD_Priority (https://www.prefech.com)'
+version '1.0.3'
+url 'https://prefech.com'
 
 -- Config Script
 server_script 'config.lua'

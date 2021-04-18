@@ -18,7 +18,3 @@
 <b>Note:</b><br>
 Staff is always able to start a cooldown.<br>
 Cooldown will start if the person who started a Priority Disconnects from the server.
-
-![Inactive](http://jokedevil.com/files/19112020-86.png)
-![Active](http://jokedevil.com/files/19112020-84.png)
-![Cooldown](http://jokedevil.com/files/19112020-85.png)

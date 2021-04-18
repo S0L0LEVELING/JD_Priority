@@ -1,5 +1,6 @@
 local Color = 255, 255, 255, 255
 local status = "~g~Inactive"
+local tS = 0
 
 RegisterNetEvent("Priority:updateStatus")
 AddEventHandler("Priority:updateStatus", function(newStatus)
@@ -7,11 +8,35 @@ AddEventHandler("Priority:updateStatus", function(newStatus)
 end)
 
 Citizen.CreateThread(function()
-    while true do 
+    while true do
         Citizen.Wait(0)
-        Text(Config.Color.."Priority Status: "..status.."", 4, 0.45, Config.DisplayX, Config.DisplayY)
+        if status == "~g~Inactive" then
+            tS = tS + 1
+            Citizen.Wait(1000)
+        else
+            tS = 0
+        end
     end
 end)
+
+Citizen.CreateThread(function()
+    while true do 
+        Citizen.Wait(0)
+        if status == "~g~Inactive" then
+            Text(Config.Color.."Priority Status: "..status.." "..Config.Color.."(~w~"..SecondsToClock(tS)..""..Config.Color..")", 4, 0.45, Config.DisplayX, Config.DisplayY)
+        else
+            Text(Config.Color.."Priority Status: "..status.."", 4, 0.45, Config.DisplayX, Config.DisplayY)
+        end
+    end
+end)
+
+function SecondsToClock(seconds)
+    local mins = string.format("%02.f", math.floor(seconds/60));
+    local secs = string.format("%02.f", math.floor(seconds - mins *60));
+    local timer = mins..":"..secs
+    return timer
+end
+
 
 function Text(content, font, scale, x, y)
     SetTextFont(font)

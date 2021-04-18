@@ -20,11 +20,11 @@ AddEventHandler('playerDropped', function(reason)
                         local mins = string.format("%02.f", math.floor(seconds/60));
                         local secs = string.format("%02.f", math.floor(seconds - mins *60));
                         local timer = mins..":"..secs
-                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown ~w~(~g~"..timer.."~w~)")
+                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown "..Config.Color.."(~w~"..timer..""..Config.Color..")")
                         cooldown = cooldown - 1
                         Citizen.Wait(1000)
                     else
-                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown ~w~(~g~"..cooldown.." mins~w~)")
+                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown "..Config.Color.."(~w~"..cooldown..""..Config.Color..")")
                         cooldown = cooldown - 1
                         Citizen.Wait(1000 * 60)
                     end
@@ -107,11 +107,11 @@ RegisterCommand("cooldown", function(source, args, rawCommand)
                         local mins = string.format("%02.f", math.floor(seconds/60));
                         local secs = string.format("%02.f", math.floor(seconds - mins *60));
                         local timer = mins..":"..secs
-                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown ~w~(~g~"..timer.."~w~)")
+                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown "..Config.Color.."(~w~"..timer..""..Config.Color..")")
                         cooldown = cooldown - 1
                         Citizen.Wait(1000)
                     else
-                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown ~w~(~g~"..cooldown.." mins~w~)")
+                        TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown "..Config.Color.."(~w~"..cooldown..""..Config.Color..")")
                         cooldown = cooldown - 1
                         Citizen.Wait(1000 * 60)
                     end
@@ -137,7 +137,11 @@ AddEventHandler('PlayerConnected', function()
     Citizen.Wait(1000)
     if cooldown ~= 0 then
         while cooldown > 0 do
-            TriggerClientEvent("Priority:updateStatus", source, "~b~Cooldown ~w~"..cooldown.." mins")
+            local seconds = cooldown
+            local mins = string.format("%02.f", math.floor(seconds/60));
+            local secs = string.format("%02.f", math.floor(seconds - mins *60));
+            local timer = mins..":"..secs
+            TriggerClientEvent("Priority:updateStatus", -1, "~b~Cooldown "..Config.Color.."(~w~"..timer..""..Config.Color..")")
             cooldown = cooldown - 1
             Citizen.Wait(1000 * 60)
         end
