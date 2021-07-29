@@ -1,8 +1,12 @@
 <h4 align="center">
 	<a href="https://github.com/JokeDevil/JD_Priority/releases/latest" title=""><img alt="Release" src="https://img.shields.io/github/v/release/JokeDevil/JD_Priority"></a>
 	<a href="LICENSE" title=""><img alt="Licence" src="https://img.shields.io/github/license/JokeDevil/JD_Priority.svg"></a>
-	<a href="https://discord.gg/m4BvmkG" title=""><img alt="Discord Status" src="https://discordapp.com/api/guilds/540630552609554453/widget.png?style=shield"></a>
+	<a href="https://discord.gg/qyPdHzDKmb" title=""><img alt="Discord Status" src="https://discordapp.com/api/guilds/540630552609554453/widget.png?style=shield"></a>
 </h4>
+
+https://discord.gg/qyPdHzDKmb
+
+
 <h4 align="center">
  FiveM Advanced Priority Resource.
 </h4>
@@ -18,3 +22,5 @@
 <b>Note:</b><br>
 Staff is always able to start a cooldown.<br>
 Cooldown will start if the person who started a Priority Disconnects from the server.
+
+https://discord.gg/qyPdHzDKmb
