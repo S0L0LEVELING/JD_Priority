@@ -4,7 +4,7 @@
 	<a href="https://discord.gg/qyPdHzDKmb" title=""><img alt="Discord Status" src="https://discordapp.com/api/guilds/540630552609554453/widget.png?style=shield"></a>
 </h4>
 
-https://discord.gg/qyPdHzDKmb
+https://discord.gg/prefech
 
 
 <h4 align="center">
@@ -23,4 +23,4 @@ https://discord.gg/qyPdHzDKmb
 Staff is always able to start a cooldown.<br>
 Cooldown will start if the person who started a Priority Disconnects from the server.
 
-https://discord.gg/qyPdHzDKmb
+https://discord.gg/prefech
